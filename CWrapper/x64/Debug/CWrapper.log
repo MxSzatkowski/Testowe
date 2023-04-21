@@ -1,0 +1,46 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Wrapper.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Entity.cpp
+C:\Users\micha\Desktop\WorkOnWrappers\DwaWrapery\CWrapper\Entity.h(8,52): error C2653: 'Core': is not a class or namespace name
+C:\Users\micha\Desktop\WorkOnWrappers\DwaWrapery\CWrapper\ManagedObject.h(11,1): error C3699: '*': cannot use this indirection on type 'T'
+          with
+          [
+              T=CLI::Entity
+          ]
+C:\Users\micha\Desktop\WorkOnWrappers\DwaWrapery\CWrapper\ManagedObject.h(11,1): message : compiler replacing '*' with '^' to continue parsing
+C:\Users\micha\Desktop\WorkOnWrappers\DwaWrapery\CWrapper\Entity.h(9,5): message : see reference to class template instantiation 'CLI::ManagedObject<CLI::Entity>' being compiled
+C:\Users\micha\Desktop\WorkOnWrappers\DwaWrapery\CWrapper\ManagedObject.h(13,1): error C3699: '*': cannot use this indirection on type 'T'
+          with
+          [
+              T=CLI::Entity
+          ]
+C:\Users\micha\Desktop\WorkOnWrappers\DwaWrapery\CWrapper\ManagedObject.h(13,1): message : compiler replacing '*' with '^' to continue parsing
+C:\Users\micha\Desktop\WorkOnWrappers\DwaWrapery\CWrapper\ManagedObject.h(32,1): error C3699: '*': cannot use this indirection on type 'T'
+          with
+          [
+              T=CLI::Entity
+          ]
+C:\Users\micha\Desktop\WorkOnWrappers\DwaWrapery\CWrapper\ManagedObject.h(32,1): message : compiler replacing '*' with '^' to continue parsing
+C:\Users\micha\Desktop\WorkOnWrappers\DwaWrapery\CWrapper\Entity.h(19,36): error C2039: 'GetA': is not a member of 'CLI::Entity'
+C:\Users\micha\Desktop\WorkOnWrappers\DwaWrapery\CWrapper\Entity.h(8,22): message : see declaration of 'CLI::Entity'
+C:\Users\micha\Desktop\WorkOnWrappers\DwaWrapery\CWrapper\Entity.h(31,36): error C2039: 'GetB': is not a member of 'CLI::Entity'
+C:\Users\micha\Desktop\WorkOnWrappers\DwaWrapery\CWrapper\Entity.h(8,22): message : see declaration of 'CLI::Entity'
+C:\Users\micha\Desktop\WorkOnWrappers\DwaWrapery\CWrapper\Entity.cpp(6,29): error C2653: 'Core': is not a class or namespace name
+C:\Users\micha\Desktop\WorkOnWrappers\DwaWrapery\CWrapper\Entity.cpp(6,43): error C2750: 'CLI::Entity': cannot use 'new' on the reference type; use 'gcnew' instead
+C:\Users\micha\Desktop\WorkOnWrappers\DwaWrapery\CWrapper\Entity.cpp(6,24): error C2665: 'CLI::ManagedObject<CLI::Entity>::ManagedObject': no overloaded function could convert all the argument types
+C:\Users\micha\Desktop\WorkOnWrappers\DwaWrapery\CWrapper\ManagedObject.h(35,1): message : could be 'CLI::ManagedObject<CLI::Entity>::ManagedObject(const CLI::ManagedObject<CLI::Entity> %)'
+C:\Users\micha\Desktop\WorkOnWrappers\DwaWrapery\CWrapper\Entity.cpp(6,24): message : 'CLI::ManagedObject<CLI::Entity>::ManagedObject(const CLI::ManagedObject<CLI::Entity> %)': cannot convert argument 1 from 'CLI::Entity *' to 'const CLI::ManagedObject<CLI::Entity> %'
+C:\Users\micha\Desktop\WorkOnWrappers\DwaWrapery\CWrapper\Entity.cpp(6,41): message : Reason: cannot convert from 'CLI::Entity *' to 'const CLI::ManagedObject<CLI::Entity>'
+C:\Users\micha\Desktop\WorkOnWrappers\DwaWrapery\CWrapper\Entity.cpp(6,41): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\micha\Desktop\WorkOnWrappers\DwaWrapery\CWrapper\ManagedObject.h(13,9): message : or       'CLI::ManagedObject<CLI::Entity>::ManagedObject(T ^)'
+          with
+          [
+              T=CLI::Entity
+          ]
+C:\Users\micha\Desktop\WorkOnWrappers\DwaWrapery\CWrapper\Entity.cpp(6,24): message : 'CLI::ManagedObject<CLI::Entity>::ManagedObject(T ^)': cannot convert argument 1 from 'CLI::Entity *' to 'T ^'
+          with
+          [
+              T=CLI::Entity
+          ]
+C:\Users\micha\Desktop\WorkOnWrappers\DwaWrapery\CWrapper\Entity.cpp(6,41): message : No user-defined-conversion operator available, or
+C:\Users\micha\Desktop\WorkOnWrappers\DwaWrapery\CWrapper\Entity.cpp(6,41): message : Cannot convert a native type to a managed type
+C:\Users\micha\Desktop\WorkOnWrappers\DwaWrapery\CWrapper\Entity.cpp(6,24): message : while trying to match the argument list '(CLI::Entity *)'
